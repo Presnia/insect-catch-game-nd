@@ -14,6 +14,14 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
@@ -22,6 +30,11 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+.screen.up {
+  margin-top: -100vh;
+}
+
 .btn {
   border: none;
   background-color: #fff;
@@ -42,6 +55,38 @@ body {
 
 .btn:focus {
   outline: none;
+}
+
+.insect-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.insect-list li {
+  margin: 10px;
+}
+
+.choose-insect-btn {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  background-color: transparent;
+  font-family: inherit;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.choose-insect-btn:hover {
+  background-color: #fff;
+  color: #647cda;
+} 
+
+.choose-insect-btn:active {
+  transform: scale(0.98);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .choose-insect-btn img {
