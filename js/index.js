@@ -1,6 +1,7 @@
 const screens = document.querySelectorAll('.screen');
 const chooseInsectBtns = document.querySelectorAll('.choose-insect-btn');
 const startBtn = document.getElementById('start-game');
+const stopBtn = document.querySelector('.stop-btn');
 const gameContainer = document.getElementById('game-container');
 const timeEl = document.getElementById('time');
 const scoreEl = document.getElementById('score');
@@ -11,6 +12,7 @@ let score = 0;
 let selected_insect = {};
 
 startBtn.addEventListener('click', () => screens[0].classList.add('up'));
+stopBtn.addEventListener('click', () => location.reload());
 
 function createInsect() {
   const insect = document.createElement('div');

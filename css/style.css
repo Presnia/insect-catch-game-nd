@@ -116,6 +116,10 @@ h1 {
 
 .message {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
   top: 0;
   left: 50%;
   transform: translate(-50%, -150%);
@@ -132,6 +136,24 @@ h1 {
 .message.visible {
   opacity: 1;
   transform: translate(-50%, 150%);
+}
+
+.stop-btn {
+  margin: auto 0.5rem;
+  top: 50%;
+  padding: 0.6rem;
+  color: red;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.stop-btn:active {
+  transform: scale(0.98);
+}
+
+.stop-btn:hover {
+  background-color: red;
+  color: #fff;
 }
 
 .insect {
