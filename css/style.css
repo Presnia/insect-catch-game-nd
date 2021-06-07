@@ -20,6 +20,7 @@ a {
 
 h1 {
   line-height: 1.4;
+  margin: 0 0.8rem;
 }
 
 .screen {
@@ -176,4 +177,32 @@ h1 {
 .insect img {
   width: 6rem;
   height: 6rem;
+}
+
+@media (max-width: 468px) {
+  h1 {
+    line-height: 1.2;
+    font-size: x-large;
+  }
+  .choose-insect-btn {
+    width: 120px;
+    height: 120px;
+  }
+  .choose-insect-btn img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  .insect {
+    width: 80px;
+    height: 80px;
+  }
+  .insect img {
+    width: 60px;
+    height: 60px;
+  }
+  .score {
+    top: 50px;
+    width: 50%;
+  }
 }
